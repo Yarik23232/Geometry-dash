@@ -59,6 +59,25 @@ a{
 	line-height: normal;
 }
 
+.burger{
+	width: 80px;
+	height: 50px;
+	background: transparent;
+	border: none;
+	display: none;
+}
+
+.burger__line{
+	width: 100%;
+	height: 10px;
+	background: rgb(196, 196, 196);
+	border-radius: 15px;
+}
+
+.burger__line:not(:last-child){
+	margin-bottom: 10px;
+}
+
 .item__color{
 	color: #00C4F0;
 }
@@ -215,6 +234,117 @@ span{
 	font-style: italic;
 }
 
+.download{
+	background-color: #2C2C2C;
+}
+.download__container{
+	padding: 75px 0 50px;
+}
 
+.download__img{
+	border-radius: 55px;
+	margin-bottom: 15px;
+}
+
+.description{
+	color: rgb(228, 228, 228);
+	font-family: Nico Moji;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.download__link{
+	color: rgb(148, 148, 148);
+	font-family: Nico Moji;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0%;
+	text-align: left;
+	margin-top: 25px;
+	display: inline-block;
+	border: 3px solid rgb(228, 228, 228);
+	padding: 3px 5px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 7px black;
+}
+
+.shadow{
+	box-shadow: 0 -5px 10px rgb(148, 148, 148);
+}
+
+@media (max-width: 834px){
+	.container{
+		max-width: 580px;
+	}
+	.nav{
+		display: none;
+	}
+	.header__link{
+		display: none;
+	}
+	.burger{
+		display: block;
+	}
+	.hero-block__img{
+		display: none;
+	}
+	.hero-block{
+		padding: 95px 0;
+	}
+	.about-game__content{
+		flex-direction: column-reverse;
+	}
+	.about-game__rating{
+		margin-top: 80px;
+	}
+	.video__video{
+		height: 351px;
+		border: 26px solid #343434;
+	}
+	.gallery__list{
+		flex-direction: column;
+		max-width: 580px;
+		margin: 0 auto;
+		list-style: none;
+	}
+	.gallery__item{
+		width: 100%;
+	}
+}
+@media(max-width: 380px){
+	.container{
+		max-width: 345px;
+	}
+	.about-game__img{
+		width: 100%;
+	}
+	.video__video{
+		height: 251px;
+		border: 17px solid #343434;
+	}
+	.container_footer{
+		flex-direction: column;
+		gap: 20px;
+	}
+	.rating__full{
+		width: 310px;
+	}
+	.burger{
+		width: 65px;
+	}
+	.logo{
+		width: 210px;
+	}
+	.hero-block__link{
+		display: block;
+		width: 100px;
+		margin: 0 auto;
+		padding: 15px 25px;
+	}
+}
 /*font-family: 'Permanent Marker', cursive;
 font-family: 'Yanone Kaffeesatz', sans-serif;/*/
